@@ -5,6 +5,8 @@ import { AuthModule } from './auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MessagesModule } from './messages/messages.module';
 import { ConfigModule } from '@nestjs/config';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -23,6 +25,9 @@ import { ConfigModule } from '@nestjs/config';
       synchronize: true,
     }),
     MessagesModule,
+    ServeStaticModule.forRoot({
+      rootPath: join(process.cwd(), 'app'),
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
