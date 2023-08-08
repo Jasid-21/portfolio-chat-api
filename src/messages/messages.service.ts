@@ -5,7 +5,7 @@ import { Message } from './entities/message.entity';
 import { Repository } from 'typeorm';
 import { User } from 'src/auth/entities/user.entity';
 import { WsException } from '@nestjs/websockets';
-import { Room } from 'src/messages/entities/room.entity';
+import { Room } from './entities/room.entity';
 import { Socket, Server } from 'socket.io';
 
 @Injectable()
