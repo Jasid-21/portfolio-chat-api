@@ -31,5 +31,6 @@ import { join } from 'path';
   ],
   controllers: [AppController],
   providers: [AppService],
+  exports: [],
 })
 export class AppModule {}
