@@ -3,5 +3,7 @@
     "activityBar.background": "#09360F",
     "titleBar.activeBackground": "#0D4B15",
     "titleBar.activeForeground": "#F1FDF3"
-  }
+  },
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/b8cff2f6-dfcd-4d8d-8145-a48f27a86862/resourceGroups/portfolio/providers/Microsoft.Web/sites/portfolio-chat",
+  "appService.deploySubpath": "."
 }
